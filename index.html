@@ -4,8 +4,17 @@
 <title>Index Test</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="styleheet" type="text/css" href="style.css">
 </head>
 <body>
+
+  <dic class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="#news">News</a>
+    <a href="#About">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
   <h1>Index Test</h1>
   <p>Hier steht etwas Text um die Seite nur ein wenig auszufüllen.<br>
     Trotzdem sollte man das hier lesen, da es total wichtig ist.</p>
@@ -21,14 +30,25 @@
   </ul>
 
   <p>Ein Link zu <a href="https://www.w3schools.com">w3schools</a>.</p>
-  
+
   <h2>Eine geordnete Liste</h2>
-  
+
   <ol>
     <li>Punkt 1</li>
     <li>Punkt 2</li>
     <li>Punkt 3</li>
   </ol>
-  
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
 </body>
 </html>
