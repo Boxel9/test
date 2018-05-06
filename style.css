@@ -23,7 +23,7 @@
 
 /* add an active class to highlight the current page */
 .active {
-  background-color: #4CAF50;
+  background-color: #ff0000;
   color: white;
 }
 
